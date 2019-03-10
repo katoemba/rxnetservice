@@ -24,7 +24,7 @@ serviceAdded and serviceRemoved.
 
   s.homepage         = 'https://bitbucket.org/katoemba/rxnetservice'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Berrie Kremers' => 'berrie@katoemba.net' }
+  s.author           = { 'Berrie Kremers' => 'berrie@rigelian.net' }
   s.source           = { :git => 'https://bitbucket.org/katoemba/rxnetservice', :tag => '0.1.0' }
 
   s.swift_version = '4.2'
