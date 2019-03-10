@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'RxNetService'
   s.version          = '0.1.0'
-  s.summary          = 'A reactive extension to NetServiceBrowser, to listen for added and removed services.'
+  s.summary          = 'A reactive extension to NetServiceBrowser.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -23,11 +23,9 @@ serviceAdded and serviceRemoved.
                        DESC
 
   s.homepage         = 'https://bitbucket.org/katoemba/rxnetservice'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Berrie Kremers' => 'berrie@katoemba.net' }
-  s.source           = { :git => 'https://bitbucket.org/katoemba/rxnetservice', :tag => 'master' }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://bitbucket.org/katoemba/rxnetservice', :tag => '0.1.0' }
 
   s.swift_version = '4.2'
   s.ios.deployment_target = '9.3'
