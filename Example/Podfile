@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'RxNetService_Example' do
+  pod 'RxNetService', :path => '../'
+
+  target 'RxNetService_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase' , '~> 2.1.4'
+  end
+end
