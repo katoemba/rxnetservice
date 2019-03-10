@@ -22,11 +22,11 @@ The RxNetService provides an rx extension to the standard NetServiceBrowser clas
 serviceAdded and serviceRemoved.
                        DESC
 
-  s.homepage         = 'https://github.com/Berrie Kremers/RxNetService'
+  s.homepage         = 'https://bitbucket.org/katoemba/rxnetservice'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Berrie Kremers' => 'berrie@katoemba.net' }
-  s.source           = { :git => 'https://github.com/Berrie Kremers/RxNetService.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://bitbucket.org/katoemba/rxnetservice', :tag => 'master' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.swift_version = '4.2'
