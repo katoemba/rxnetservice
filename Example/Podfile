@@ -2,10 +2,11 @@ use_frameworks!
 
 target 'RxNetService_Example' do
   pod 'RxNetService', :path => '../'
+  pod 'RxSwift', '~> 4.0'
+  pod 'RxCocoa', '~> 4.0'
 
   target 'RxNetService_Tests' do
     inherit! :search_paths
 
-    pod 'FBSnapshotTestCase' , '~> 2.1.4'
   end
 end

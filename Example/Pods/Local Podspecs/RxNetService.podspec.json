@@ -1,0 +1,30 @@
+{
+  "name": "RxNetService",
+  "version": "0.1.0",
+  "summary": "A short description of RxNetService.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Berrie Kremers/RxNetService",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Berrie Kremers": "berrie@katoemba.net"
+  },
+  "source": {
+    "git": "https://github.com/Berrie Kremers/RxNetService.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "RxNetService/Classes/**/*",
+  "dependencies": {
+    "RxSwift": [
+      "~> 4.0"
+    ],
+    "RxCocoa": [
+      "~> 4.0"
+    ]
+  }
+}

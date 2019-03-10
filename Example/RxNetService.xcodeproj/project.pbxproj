@@ -15,6 +15,8 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		93BD1F8D9AE71FA4CE7B56C5 /* Pods_RxNetService_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 711ADC0D0006ADCF91765367 /* Pods_RxNetService_Tests.framework */; };
+		C5675F5022359B860038BB3E /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5675F4F22359B860038BB3E /* RxSwift.framework */; };
+		C5675F5222359B8D0038BB3E /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5675F5122359B8D0038BB3E /* RxCocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +31,7 @@
 
 /* Begin PBXFileReference section */
 		3ABF77434C369390E7DE2B79 /* Pods-RxNetService_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxNetService_Example.release.xcconfig"; path = "Target Support Files/Pods-RxNetService_Example/Pods-RxNetService_Example.release.xcconfig"; sourceTree = "<group>"; };
-		563EAC8B9583FA7FF7FFFE78 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		563EAC8B9583FA7FF7FFFE78 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		5A9B95F29188BA7C9FBD8933 /* Pods-RxNetService_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxNetService_Tests.debug.xcconfig"; path = "Target Support Files/Pods-RxNetService_Tests/Pods-RxNetService_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* RxNetService_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxNetService_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -41,12 +43,14 @@
 		607FACE51AFB9204008FA782 /* RxNetService_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxNetService_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6FDAC31B34806F0B65F7FCB7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		6FDAC31B34806F0B65F7FCB7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		711ADC0D0006ADCF91765367 /* Pods_RxNetService_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxNetService_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A48C465601E7C8F4B2291A1B /* Pods-RxNetService_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxNetService_Example.debug.xcconfig"; path = "Target Support Files/Pods-RxNetService_Example/Pods-RxNetService_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BE44787388D8B6D14E111B0B /* Pods_RxNetService_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxNetService_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5675F4F22359B860038BB3E /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5675F5122359B8D0038BB3E /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF4BD234A5EBBE585B2B13C3 /* Pods-RxNetService_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxNetService_Tests.release.xcconfig"; path = "Target Support Files/Pods-RxNetService_Tests/Pods-RxNetService_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		FB1D1A11F07263F78C848421 /* RxNetService.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = RxNetService.podspec; path = ../RxNetService.podspec; sourceTree = "<group>"; };
+		FB1D1A11F07263F78C848421 /* RxNetService.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RxNetService.podspec; path = ../RxNetService.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5675F5222359B8D0038BB3E /* RxCocoa.framework in Frameworks */,
+				C5675F5022359B860038BB3E /* RxSwift.framework in Frameworks */,
 				602019174FCD0DD1ED2D2D1F /* Pods_RxNetService_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,6 +78,8 @@
 		327F5DD42843EF29575DF4E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C5675F5122359B8D0038BB3E /* RxCocoa.framework */,
+				C5675F4F22359B860038BB3E /* RxSwift.framework */,
 				BE44787388D8B6D14E111B0B /* Pods_RxNetService_Example.framework */,
 				711ADC0D0006ADCF91765367 /* Pods_RxNetService_Tests.framework */,
 			);
@@ -156,7 +164,6 @@
 				5A9B95F29188BA7C9FBD8933 /* Pods-RxNetService_Tests.debug.xcconfig */,
 				EF4BD234A5EBBE585B2B13C3 /* Pods-RxNetService_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -190,7 +197,6 @@
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				15058976670A7AB70A254B45 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -209,11 +215,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = N7DKJ3YJS4;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
@@ -263,28 +270,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		15058976670A7AB70A254B45 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RxNetService_Tests/Pods-RxNetService_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxNetService_Tests/Pods-RxNetService_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		577FC0DF4B91D152136868F8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -316,13 +301,19 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-RxNetService_Example/Pods-RxNetService_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxNetService/RxNetService.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxNetService.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -413,12 +404,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -466,12 +459,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -505,6 +500,7 @@
 			baseConfigurationReference = A48C465601E7C8F4B2291A1B /* Pods-RxNetService_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N7DKJ3YJS4;
 				INFOPLIST_FILE = RxNetService/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -520,6 +516,7 @@
 			baseConfigurationReference = 3ABF77434C369390E7DE2B79 /* Pods-RxNetService_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N7DKJ3YJS4;
 				INFOPLIST_FILE = RxNetService/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
