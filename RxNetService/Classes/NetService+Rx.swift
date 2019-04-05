@@ -53,7 +53,7 @@ public class RxNetServiceDelegateProxy
 }
 
 public extension Reactive where Base: NetService {
-    public var delegate: DelegateProxy<NetService, NetServiceDelegate> {
+    var delegate: DelegateProxy<NetService, NetServiceDelegate> {
         return RxNetServiceDelegateProxy.proxy(for: base)
     }
     
@@ -64,12 +64,12 @@ public extension Reactive where Base: NetService {
     ///
     /// - parameter delegate: Delegate object.
     /// - returns: Disposable object that can be used to unbind the delegate.
-    public func setDelegate(_ delegate: NetServiceDelegate)
+    func setDelegate(_ delegate: NetServiceDelegate)
         -> Disposable {
             return RxNetServiceDelegateProxy.installForwardDelegate(delegate, retainDelegate: false, onProxyForObject: self.base)
     }
     
-    public var didResolveAddress: Observable<NetService> {
+    var didResolveAddress: Observable<NetService> {
         return delegate
             .methodInvoked(#selector(NetServiceDelegate.netServiceDidResolveAddress(_:)))
             .map { params in
@@ -77,7 +77,7 @@ public extension Reactive where Base: NetService {
             }
     }
 
-    public func resolve(withTimeout timeout: TimeInterval) -> Observable<NetService> {
+    func resolve(withTimeout timeout: TimeInterval) -> Observable<NetService> {
         let netService = self.base as NetService
         netService.resolve(withTimeout: timeout)
         return didResolveAddress.filter {

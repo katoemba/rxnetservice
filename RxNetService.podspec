@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RxNetService'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A reactive extension to NetServiceBrowser.'
 
 # This description is used to generate tags and improve search results.
@@ -25,9 +25,9 @@ serviceAdded and serviceRemoved.
   s.homepage         = 'https://bitbucket.org/katoemba/rxnetservice'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Berrie Kremers' => 'berrie@rigelian.net' }
-  s.source           = { :git => 'https://bitbucket.org/katoemba/rxnetservice', :tag => '0.1.0' }
+  s.source           = { :git => 'https://bitbucket.org/katoemba/rxnetservice', :tag => '0.1.1' }
 
-  s.swift_version = '4.2'
+  s.swift_version = '5.0'
   s.ios.deployment_target = '9.3'
 
   s.source_files = 'RxNetService/Classes/**/*'
@@ -38,6 +38,6 @@ serviceAdded and serviceRemoved.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'RxSwift', '~> 4.0'
-  s.dependency 'RxCocoa', '~> 4.0'
+  s.dependency 'RxSwift', '~> 4.5'
+  s.dependency 'RxCocoa', '~> 4.5'
 end

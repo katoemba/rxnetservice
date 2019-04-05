@@ -53,7 +53,7 @@ public class RxNetServiceBrowserDelegateProxy
 }
 
 public extension Reactive where Base: NetServiceBrowser {
-    public var delegate: DelegateProxy<NetServiceBrowser, NetServiceBrowserDelegate> {
+    var delegate: DelegateProxy<NetServiceBrowser, NetServiceBrowserDelegate> {
         return RxNetServiceBrowserDelegateProxy.proxy(for: base)
     }
     
@@ -64,12 +64,12 @@ public extension Reactive where Base: NetServiceBrowser {
     ///
     /// - parameter delegate: Delegate object.
     /// - returns: Disposable object that can be used to unbind the delegate.
-    public func setDelegate(_ delegate: NetServiceBrowserDelegate)
+    func setDelegate(_ delegate: NetServiceBrowserDelegate)
         -> Disposable {
             return RxNetServiceBrowserDelegateProxy.installForwardDelegate(delegate, retainDelegate: false, onProxyForObject: self.base)
     }
     
-    public var serviceAdded: Observable<NetService> {
+    var serviceAdded: Observable<NetService> {
         return delegate
             .methodInvoked(#selector(NetServiceBrowserDelegate.netServiceBrowser(_:didFind:moreComing:)))
             .flatMap { (params) -> Observable<NetService> in
@@ -79,7 +79,7 @@ public extension Reactive where Base: NetServiceBrowser {
             .share(replay: 1)
     }
     
-    public var serviceRemoved: Observable<NetService> {
+    var serviceRemoved: Observable<NetService> {
         return delegate
             .methodInvoked(#selector(NetServiceBrowserDelegate.netServiceBrowser(_:didRemove:moreComing:)))
             .map { params in
