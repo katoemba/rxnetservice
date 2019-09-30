@@ -1,6 +1,0 @@
-framework module RxNetService {
-  umbrella header "RxNetService-umbrella.h"
-
-  export *
-  module * { export * }
-}
