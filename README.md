@@ -38,10 +38,10 @@ import PackageDescription
 let package = Package(
   name: "MyProject",
   dependencies: [
-  .package(url: "https://github.com/katoemba/mpdconnector.git", from: "1.7.0")
+  .package(url: "https://github.com/katoemba/rxnetservice.git", from: "0.2.1")
   ],
   targets: [
-    .target(name: "MyProject", dependencies: ["mpdconnector"])
+    .target(name: "MyProject", dependencies: ["rxnetservice"])
   ]
 )
 ```
