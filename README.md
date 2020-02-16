@@ -1,7 +1,8 @@
 # RxNetService
 
-[![License](https://img.shields.io/cocoapods/l/RxNetService.svg?style=flat)](https://cocoapods.org/pods/RxNetService)
-[![Platform](https://img.shields.io/cocoapods/p/RxNetService.svg?style=flat)](https://cocoapods.org/pods/RxNetService)
+[![bitrise CI](https://img.shields.io/bitrise/ec02a90991a765cd?token=tFLkMNn-FUH_pVLLnJF4wA)](https://bitrise.io)
+![platforms](https://img.shields.io/badge/platforms-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS-lightgrey)
+[![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
 
 ## Code Snippet
 
