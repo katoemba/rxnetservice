@@ -87,23 +87,38 @@ public extension Reactive where Base: NetService {
 }
 
 public extension NetService {
-    var firstIpAddress: String? {
-        guard let address = addresses?.first else { return nil }
-        
-        return address.withUnsafeBytes { pointer -> String? in
-            var hostStr = [Int8](repeating: 0, count: Int(NI_MAXHOST))
+    var firstIPv4Address: String? {
+        firstAddress(containing: ".")
+    }
 
-            let result = getnameinfo(
-                pointer.baseAddress?.assumingMemoryBound(to: sockaddr.self),
-                socklen_t(address.count),
-                &hostStr,
-                socklen_t(hostStr.count),
-                nil,
-                0,
-                NI_NUMERICHOST
-            )
-            guard result == 0 else { return nil }
-            return String(cString: hostStr)
+    var firstIPv6Address: String? {
+        firstAddress(containing: ":")
+    }
+
+    func firstAddress(containing: String) -> String? {
+        guard let addresses = addresses else { return nil }
+        for address in addresses {
+            if let ip = address.withUnsafeBytes({ pointer -> String? in
+                var hostStr = [Int8](repeating: 0, count: Int(NI_MAXHOST))
+                
+                let result = getnameinfo(
+                    pointer.baseAddress?.assumingMemoryBound(to: sockaddr.self),
+                    socklen_t(address.count),
+                    &hostStr,
+                    socklen_t(hostStr.count),
+                    nil,
+                    0,
+                    NI_NUMERICHOST
+                )
+                guard result == 0 else { return nil }
+                return String(cString: hostStr)
+            }) {
+                if ip.contains(containing) {
+                    return ip
+                }
+            }
         }
+        
+        return nil
     }
 }
